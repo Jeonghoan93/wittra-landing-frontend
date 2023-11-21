@@ -37,7 +37,7 @@ const CreateProfileModal = () => {
 
   const bodyContent = (
     <div className="flex flex-col items-center">
-      <span className="font-bold text-[16pt] mb-4">GOTO</span>
+      <span className="font-bold text-[16pt] mb-4">WiTTRA</span>
       <span className="font-normal text-gray-800 text-[12pt]">
         Discover unique experiences around the world.
       </span>

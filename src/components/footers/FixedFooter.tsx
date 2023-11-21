@@ -29,7 +29,7 @@ const FixedFooter: React.FC = () => {
             onClick={() => navigate("/")}
             className="cursor-pointer hover:underline"
           >
-            © 2023 GOTO, Inc.
+            © 2023 WiTTRA, Inc.
           </span>
           <span>·</span>
           <span

@@ -36,7 +36,7 @@ const MainFooter: React.FC = () => {
                 className="cursor-pointer text-[14pt] font-extrabold"
                 onClick={() => navigate("/")}
               >
-                GOTO™ AB
+                WiTTRA™ AB
               </span>
               <span className="text-gray-500 mb-0 text-[12pt] font-semibold ">
                 Unlocking marketing, pr and fashion strategies
@@ -63,7 +63,7 @@ const MainFooter: React.FC = () => {
                 <span>
                   <MdAttachEmail />
                 </span>
-                <span className="font-semibold">info@GOTO.io</span>
+                <span className="font-semibold">info@WiTTRA.io</span>
               </div>
             </div>
           </div>

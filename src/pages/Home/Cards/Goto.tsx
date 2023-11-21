@@ -1,4 +1,4 @@
-const Goto = () => {
+const WiTTRA = () => {
   return (
     <div className="pt-6 p-3">
       <div className="flex flex-col sm:flex-row items-center justify-between gap-10">
@@ -25,7 +25,7 @@ const Goto = () => {
 
         <section className="w-full h-[60vh] overflow-hidden relative">
           <img
-            src={"/images/goto.avif"}
+            src={"/images/WiTTRA.avif"}
             style={{ width: "100%", height: "100%" }}
             className="object-cover w-full"
             alt="Image"
@@ -37,4 +37,4 @@ const Goto = () => {
   );
 };
 
-export default Goto;
+export default WiTTRA;

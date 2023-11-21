@@ -17,7 +17,7 @@ const Enterprise = () => {
             maxWidth: "500px",
           }}
         >
-          Why Choose GOTO?
+          Why Choose WiTTRA?
         </span>
         <div className="flex flex-row justify-between gap-12">
           <span
@@ -27,7 +27,7 @@ const Enterprise = () => {
             }}
           >
             For enterprises like festival organizers, club owners, and large
-            event hosts, GOTO offers a unique gamified discovery process,
+            event hosts, WiTTRA offers a unique gamified discovery process,
             monetary incentives for users, and a robust platform ensuring safety
             and trustworthiness.
           </span>
@@ -85,8 +85,8 @@ const Enterprise = () => {
           </span>
           <span className="text-[11pt] text-gray-600">
             Tap into a gamified event discovery platform, putting your events at
-            the fingertips of eager attendees. With GOTO, your events stand out,
-            drawing young adults and professionals seamlessly.
+            the fingertips of eager attendees. With WiTTRA, your events stand
+            out, drawing young adults and professionals seamlessly.
           </span>
         </div>
 

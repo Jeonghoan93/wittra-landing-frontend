@@ -29,7 +29,7 @@ const NavbarCareer = () => {
                 onClick={() => navigate("/careers")}
                 className="cursor-pointer flex flex-row gap-1"
               >
-                <span className="font-bold">GOTO</span>
+                <span className="font-bold">WiTTRA</span>
                 <span className="font-semibold">Careers</span>
               </div>
 

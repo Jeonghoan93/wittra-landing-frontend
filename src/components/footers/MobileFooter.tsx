@@ -12,7 +12,7 @@ const MobileFooter: React.FC = () => {
     >
       <div className="flex justify-around h-full px-4">
         <div className="flex flex-row items-center gap-3">
-          <span className="font-bold text-[13pt]">Hi, Welcome to GOTO!</span>
+          <span className="font-bold text-[13pt]">Hi, Welcome to WiTTRA!</span>
           <span className="cursor-pointer">
             <img
               className="rounded-full"

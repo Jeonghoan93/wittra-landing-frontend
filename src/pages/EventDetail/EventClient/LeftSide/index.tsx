@@ -6,7 +6,7 @@ import NameDesc from "./Cards/NameDesc";
 const InfoTexts = [
   {
     title: "I have not received my ticket by email. What should I do?",
-    desc: "The first thing you have to do is check the spam, junk mail and advertising folder, as unfortunately we sometimes throw it there. This is because your tickets have been sent as an attachment and it can be regarded as spam by some systems. Alternatively, you can always find your tickets by logging into your GOTO account, which you can access via our app or browser. For more help,",
+    desc: "The first thing you have to do is check the spam, junk mail and advertising folder, as unfortunately we sometimes throw it there. This is because your tickets have been sent as an attachment and it can be regarded as spam by some systems. Alternatively, you can always find your tickets by logging into your WiTTRA account, which you can access via our app or browser. For more help,",
     path: "/",
   },
   {

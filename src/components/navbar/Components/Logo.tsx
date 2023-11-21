@@ -8,7 +8,7 @@ const Logo = () => {
       onClick={() => navigate("/")}
       className={"cursor-pointer font-extrabold text-[14pt]"}
     >
-      GOTO
+      WiTTRA
     </span>
   );
 };

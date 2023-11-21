@@ -13,8 +13,8 @@ export const ExpansionIdeas = [
   {
     title: "How can you monetize the brand beyond just event tickets?",
     desc: [
-      "Collaborate with related vendors, such as costume shops, transportation services, or accommodation providers. Whenever a user purchases from these vendors through GOTO's recommendation, the platform earns a commission.",
-      "Event organizers or brands can pay to have their events or products featured prominently on the platform, generating advertising revenue for GOTO.",
+      "Collaborate with related vendors, such as costume shops, transportation services, or accommodation providers. Whenever a user purchases from these vendors through WiTTRA's recommendation, the platform earns a commission.",
+      "Event organizers or brands can pay to have their events or products featured prominently on the platform, generating advertising revenue for WiTTRA.",
       "Offer event planning services or consultation for individuals or corporations looking to host unique parties, leveraging the platform's expertise and network.",
       "Host workshops on party planning, DJing, or other related skills. This can be a source of both revenue and community engagement.",
     ],
@@ -24,7 +24,7 @@ export const ExpansionIdeas = [
     title:
       "What's the viability of launching in different countries or cultures?",
     desc: [
-      "Europe's rich cultural diversity means a wide array of events, festivals, and parties occur throughout the year. From Spain's La Tomatina to Germany's Oktoberfest or the numerous music festivals across the UK, France, and the Netherlands, there's always something happening. This provides ample opportunities for GOTO to curate and list unique party events.",
+      "Europe's rich cultural diversity means a wide array of events, festivals, and parties occur throughout the year. From Spain's La Tomatina to Germany's Oktoberfest or the numerous music festivals across the UK, France, and the Netherlands, there's always something happening. This provides ample opportunities for WiTTRA to curate and list unique party events.",
     ],
     path: "/",
   },
@@ -33,12 +33,12 @@ export const ExpansionIdeas = [
 export const InfoTexts = [
   {
     title: "Problem & Market Opportunity",
-    desc: "The problem GOTO is addressing is genuine, especially in an era dominated by digital interactions. The scattered nature of event information makes it challenging for users to find events they're interested in. As We are targeting young adults and professionals, it's a sizeable market opportunity, especially if we can create a seamless, user-friendly platform.",
+    desc: "The problem WiTTRA is addressing is genuine, especially in an era dominated by digital interactions. The scattered nature of event information makes it challenging for users to find events they're interested in. As We are targeting young adults and professionals, it's a sizeable market opportunity, especially if we can create a seamless, user-friendly platform.",
     path: "/",
   },
   {
     title: "Unique Value Proposition",
-    desc: "Our monetary incentive model is an intriguing differentiator. By gamifying the party discovery process, We are creating a deeper engagement level for users. The ability to earn while attending or promoting events can prove to be a strong incentive, especially for the target demographic. If executed well, this can set GOTO distinctly apart from competitors.",
+    desc: "Our monetary incentive model is an intriguing differentiator. By gamifying the party discovery process, We are creating a deeper engagement level for users. The ability to earn while attending or promoting events can prove to be a strong incentive, especially for the target demographic. If executed well, this can set WiTTRA distinctly apart from competitors.",
     path: "/",
   },
   {
@@ -60,7 +60,7 @@ export const SafetyTrust = [
     title: "Event Verification System",
     desc: [
       "Organizers can be required to submit necessary permits, licenses, or other official documents to prove the legitimacy of their event.",
-      "For larger events or venues, GOTO can collaborate with third-party agencies to conduct physical inspections ensuring the location is safe and meets the description.",
+      "For larger events or venues, WiTTRA can collaborate with third-party agencies to conduct physical inspections ensuring the location is safe and meets the description.",
       "Regularly check and review the history of event organizers. Those with consistently high ratings and no safety issues can be granted a verified badge, enhancing their credibility.",
     ],
     path: "/",
@@ -114,15 +114,15 @@ export const WhySweden = [
     desc: [
       "Sweden consistently ranks among the top countries in the world for English proficiency. This high level of fluency makes it easier for startups to operate, especially we're targeting an international or European audience.",
       "The widespread use of English facilitates smoother business operations, from daily communications to complex negotiations with partners, vendors, or investors.",
-      "As GOTO aims for a European audience, the ability to communicate seamlessly in English ensures that collaborations, partnerships, and marketing campaigns can be easily extended across borders.",
-      "Global Orientation: Given that English is the dominant language for global business and tech, having a base in an English-proficient city like Stockholm means that while GOTO is starting with a European focus, it can easily pivot or expand to global markets in the future.",
+      "As WiTTRA aims for a European audience, the ability to communicate seamlessly in English ensures that collaborations, partnerships, and marketing campaigns can be easily extended across borders.",
+      "Global Orientation: Given that English is the dominant language for global business and tech, having a base in an English-proficient city like Stockholm means that while WiTTRA is starting with a European focus, it can easily pivot or expand to global markets in the future.",
     ],
     path: "/",
   },
   {
     title: "Tech Hub and Startup Ecosystem",
     desc: [
-      "Stockholm is renowned for being one of Europe's leading tech hubs. It's the birthplace of global tech companies like Spotify, GOTO, and Skype.",
+      "Stockholm is renowned for being one of Europe's leading tech hubs. It's the birthplace of global tech companies like Spotify, WiTTRA, and Skype.",
       "there's an abundance of skilled professionals in the areas of software development, digital marketing, and startup growth.",
       " Stockholm boasts numerous accelerators, incubators, and co-working spaces, creating a conducive environment for startups to grow and thrive.",
     ],
@@ -131,8 +131,8 @@ export const WhySweden = [
   {
     title: "Cultural Relevance",
     desc: [
-      "Swedes are known for their openness to adopting new technologies and trends, making them more likely to try out a new platform like GOTO.",
-      "Stockholm dost not have a thriving nightlife scene, with many young adults and working professionals actively wanting to participate. This provides GOTO with an immediate target audience to cater to.",
+      "Swedes are known for their openness to adopting new technologies and trends, making them more likely to try out a new platform like WiTTRA.",
+      "Stockholm dost not have a thriving nightlife scene, with many young adults and working professionals actively wanting to participate. This provides WiTTRA with an immediate target audience to cater to.",
     ],
     path: "/",
   },
