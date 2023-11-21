@@ -6,6 +6,7 @@ import AviationCard from "./Cards/AviationCard";
 import HeavyIndustryCard from "./Cards/HeavyIndustryCard";
 import LogisticsCard from "./Cards/LogisticsCard";
 import PropTechCard from "./Cards/PropTechCard";
+import Goto from "./Cards/Goto";
 
 const Home: React.FC = () => {
   return (
@@ -45,6 +46,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
+        <Goto />
       </div>
     </Container>
   );

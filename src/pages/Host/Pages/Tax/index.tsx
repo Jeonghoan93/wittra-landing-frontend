@@ -39,7 +39,7 @@ const Tax = () => {
                 Log in to view the status
               </span>
               <span className="text-[12pt] text-gray-600">
-                You can view, learn about tax regarding earning from Wittra once
+                You can view, learn about tax regarding earning from GOTO once
                 you've logged in.
               </span>
             </div>

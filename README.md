@@ -1,3 +1,3 @@
-# Wittra Landing Frontend
+# GOTO Landing Frontend
 
-This landing frontend is built to represent wittra's vision and products for both customers and investors.
+This landing frontend is built to represent GOTO's vision and products for both customers and investors.

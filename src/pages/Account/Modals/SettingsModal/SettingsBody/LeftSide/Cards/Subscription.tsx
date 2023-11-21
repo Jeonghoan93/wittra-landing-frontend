@@ -14,7 +14,7 @@ const Subscription = () => {
         <div className="flex flex-row justify-between items-center text-center">
           <div className="flex flex-col items-start">
             <div className="flex flex-row gap-2 items-center hover:underline cursor-pointer">
-              <span>Subscribe to Wittra</span>
+              <span>Subscribe to GOTO</span>
             </div>
 
             <span className="text-gray-400 text-[10pt]">

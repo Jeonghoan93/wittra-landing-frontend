@@ -18,11 +18,10 @@ const WelcomeCard = () => {
       >
         <div className="text-white flex flex-col items-center text-center gap-2">
           <span className="text-[15pt] text-gray-50 font-extrabold">
-            The only IoT solution you will ever need
+            For every occasions
           </span>
           <span className="text-[11pt] font-bold px-3 text-gray-200">
-            Ultimately providing a solid, reliable way to find out "where is my
-            stuff, and what is it doing?"
+            Unlocking marketing, pr and fahsion
           </span>
           <span
             onClick={() => alert("Coming soon!")}

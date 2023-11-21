@@ -30,7 +30,7 @@ const NavbarInvestor = () => {
                 onClick={() => navigate("/investor")}
                 className="cursor-pointer flex flex-row gap-1"
               >
-                <span className="font-bold">Wittra</span>
+                <span className="font-bold">GOTO</span>
                 <span className="font-semibold">Investor</span>
               </div>
 

@@ -161,7 +161,7 @@ export const jobList = [
     contract: "HYBRID",
   },
   {
-    title: "Wittra UK Collections & Recoveries Senior Manager",
+    title: "GOTO UK Collections & Recoveries Senior Manager",
     location: "STOCKHOLM, SWEDEN",
     category: "ANALYTICS",
     type: "FULL-TIME",
