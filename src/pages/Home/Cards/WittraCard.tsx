@@ -1,4 +1,4 @@
-const WiTTRA = () => {
+const WittraCard = () => {
   return (
     <div className="pt-6 p-3">
       <div className="flex flex-col sm:flex-row items-center justify-between gap-10">
@@ -23,9 +23,9 @@ const WiTTRA = () => {
           </div>
         </div>
 
-        <section className="w-full h-[60vh] overflow-hidden relative">
+        <section className="w-full h-[70vh] overflow-hidden relative">
           <img
-            src={"/images/WiTTRA.avif"}
+            src={"/images/goto.avif"}
             style={{ width: "100%", height: "100%" }}
             className="object-cover w-full"
             alt="Image"
@@ -37,4 +37,4 @@ const WiTTRA = () => {
   );
 };
 
-export default WiTTRA;
+export default WittraCard;

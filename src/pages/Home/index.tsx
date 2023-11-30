@@ -6,7 +6,7 @@ import AviationCard from "./Cards/AviationCard";
 import HeavyIndustryCard from "./Cards/HeavyIndustryCard";
 import LogisticsCard from "./Cards/LogisticsCard";
 import PropTechCard from "./Cards/PropTechCard";
-import WiTTRA from "./Cards/WiTTRA";
+import WittraCard from "./Cards/WittraCard";
 
 const Home: React.FC = () => {
   return (
@@ -46,7 +46,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-        <WiTTRA />
+        <WittraCard />
       </div>
     </Container>
   );
