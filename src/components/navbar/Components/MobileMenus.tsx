@@ -4,7 +4,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import useCreateProfileModal from "src/hooks/useCreateProfile";
-import useLoginModal from "src/hooks/useLoginModal";
+import useContactUsModal from "src/hooks/useContactUsModal";
 import useRegisterModal from "src/hooks/useRegisterModal";
 import useRentModal from "src/hooks/useRentModal";
 import useOnClickOutside from "src/hooks/userOnClickOutside";
@@ -19,7 +19,7 @@ interface MobileMenusProps {
 const MobileMenus: React.FC<MobileMenusProps> = ({ currentUser }) => {
   const navigate = useNavigate();
 
-  const loginModal = useLoginModal();
+  const contactUsModal = useContactUsModal();
   const registerModal = useRegisterModal();
   const rentModal = useRentModal();
 
@@ -36,11 +36,11 @@ const MobileMenus: React.FC<MobileMenusProps> = ({ currentUser }) => {
 
   const onRent = useCallback(() => {
     if (!currentUser) {
-      return loginModal.onOpen();
+      return contactUsModal.onOpen();
     }
 
     rentModal.onOpen();
-  }, [loginModal, rentModal, currentUser]);
+  }, [contactUsModal, rentModal, currentUser]);
 
   const handleSignOut = async () => {
     try {
@@ -154,7 +154,7 @@ const MobileMenus: React.FC<MobileMenusProps> = ({ currentUser }) => {
               </>
             ) : (
               <>
-                <MenuItem label="Login" onClick={loginModal.onOpen} />
+                <MenuItem label="Login" onClick={contactUsModal.onOpen} />
 
                 <MenuItem label="Sign up" onClick={registerModal.onOpen} />
 
@@ -166,7 +166,9 @@ const MobileMenus: React.FC<MobileMenusProps> = ({ currentUser }) => {
                 >
                   <MenuItem
                     label="List your party"
-                    onClick={currentUser ? rentModal.onOpen : loginModal.onOpen}
+                    onClick={
+                      currentUser ? rentModal.onOpen : contactUsModal.onOpen
+                    }
                   />
                 </div>
                 <hr className="block lg:hidden" />

@@ -5,7 +5,7 @@ import { User } from "src/interfaces/user";
 
 import { useNavigate } from "react-router-dom";
 import { addToFavorites, deleteFromFavorites } from "src/services/favorites";
-import useLoginModal from "./useLoginModal";
+import useContactUsModal from "./useContactUsModal";
 
 interface IUseFavorite {
   eventId: number;
@@ -15,7 +15,7 @@ interface IUseFavorite {
 const useFavorite = ({ eventId, currentUser }: IUseFavorite) => {
   const navigate = useNavigate();
 
-  const loginModal = useLoginModal();
+  const contactUsModal = useContactUsModal();
 
   const hasFavorited = useMemo(() => {
     const list = currentUser?.favoriteIds || [];
@@ -28,7 +28,7 @@ const useFavorite = ({ eventId, currentUser }: IUseFavorite) => {
       e.stopPropagation();
 
       if (!currentUser) {
-        return loginModal.onOpen();
+        return contactUsModal.onOpen();
       }
 
       try {
@@ -44,7 +44,7 @@ const useFavorite = ({ eventId, currentUser }: IUseFavorite) => {
         toast.error("Something went wrong.");
       }
     },
-    [currentUser, hasFavorited, eventId, loginModal, navigate]
+    [currentUser, hasFavorited, eventId, contactUsModal, navigate]
   );
 
   return {

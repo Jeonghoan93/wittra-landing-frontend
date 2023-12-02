@@ -4,7 +4,7 @@ import { Range } from "react-date-range";
 import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import Container from "src/components/Container";
-import useLoginModal from "src/hooks/useLoginModal";
+import useContactUsModal from "src/hooks/useContactUsModal";
 import { useWindowWidth } from "src/hooks/useWindowWidth";
 import { Booking } from "src/interfaces/booking";
 import { Event } from "src/interfaces/event";
@@ -28,7 +28,7 @@ interface EventClientProps {
 }
 
 const EventClient: React.FC<EventClientProps> = ({ event, currentUser }) => {
-  const loginModal = useLoginModal();
+  const contactUsModal = useContactUsModal();
   const navigate = useNavigate();
 
   const windowWidth = useWindowWidth();
@@ -40,7 +40,7 @@ const EventClient: React.FC<EventClientProps> = ({ event, currentUser }) => {
 
   const onCreateBooking = useCallback(async () => {
     if (!currentUser) {
-      return loginModal.onOpen();
+      return contactUsModal.onOpen();
     }
 
     if (!dateRange.startDate || !dateRange.endDate) {
@@ -80,7 +80,7 @@ const EventClient: React.FC<EventClientProps> = ({ event, currentUser }) => {
     currentUser,
     dateRange.startDate,
     dateRange.endDate,
-    loginModal,
+    contactUsModal,
     totalPrice,
     event,
     navigate,

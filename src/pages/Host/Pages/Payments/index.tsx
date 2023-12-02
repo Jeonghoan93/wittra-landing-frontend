@@ -3,13 +3,13 @@ import { useNavigate } from "react-router-dom";
 import Button from "src/components/Button";
 import Container from "src/components/Container";
 import { useCurrentUser } from "src/hooks/useCurrentUser";
-import useLoginModal from "src/hooks/useLoginModal";
+import useContactUsModal from "src/hooks/useContactUsModal";
 
 const PaymentsHost = () => {
   const currentUser = useCurrentUser();
   const navigate = useNavigate();
 
-  const loginModal = useLoginModal();
+  const contactUsModal = useContactUsModal();
 
   if (!currentUser) {
     return (
@@ -44,7 +44,7 @@ const PaymentsHost = () => {
             </div>
 
             <div style={{ maxWidth: "100px" }}>
-              <Button label="Log in" onClick={loginModal.onOpen} />
+              <Button label="Log in" onClick={contactUsModal.onOpen} />
             </div>
           </div>
         </div>

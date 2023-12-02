@@ -7,6 +7,7 @@ import HeavyIndustryCard from "./Cards/HeavyIndustryCard";
 import LogisticsCard from "./Cards/LogisticsCard";
 import PropTechCard from "./Cards/PropTechCard";
 import WittraCard from "./Cards/WittraCard";
+import ContactUsCard from "./Cards/ContactUsCard";
 
 const Home: React.FC = () => {
   return (
@@ -19,13 +20,14 @@ const Home: React.FC = () => {
         "
       >
         <WelcomeCard />
+        <WittraCard />
         <div className="flex flex-col gap-4 pt-4 md:flex-row">
           <AviationCard />
           <HeavyIndustryCard />
           <LogisticsCard />
           <PropTechCard />
         </div>
-        <div className="pt-4 flex flex-col gap-4">
+        <div className="py-4 flex flex-col gap-4">
           <div
             className="
               grid 
@@ -46,7 +48,7 @@ const Home: React.FC = () => {
             </div>
           </div>
         </div>
-        <WittraCard />
+        <ContactUsCard />
       </div>
     </Container>
   );

@@ -4,7 +4,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import useCreateProfileModal from "src/hooks/useCreateProfile";
-import useLoginModal from "src/hooks/useLoginModal";
+import useContactUsModal from "src/hooks/useContactUsModal";
 import useRegisterModal from "src/hooks/useRegisterModal";
 import useRentModal from "src/hooks/useRentModal";
 import useOnClickOutside from "src/hooks/userOnClickOutside";
@@ -20,7 +20,7 @@ interface UserMenuProps {
 const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
   const navigate = useNavigate();
 
-  const loginModal = useLoginModal();
+  const contactUsModal = useContactUsModal();
   const registerModal = useRegisterModal();
   const rentModal = useRentModal();
 
@@ -37,11 +37,11 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
 
   const onRent = useCallback(() => {
     if (!currentUser) {
-      return loginModal.onOpen();
+      return contactUsModal.onOpen();
     }
 
     rentModal.onOpen();
-  }, [loginModal, rentModal, currentUser]);
+  }, [contactUsModal, rentModal, currentUser]);
 
   const handleSignOut = async () => {
     try {

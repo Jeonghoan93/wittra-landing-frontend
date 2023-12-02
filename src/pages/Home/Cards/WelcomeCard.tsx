@@ -18,17 +18,9 @@ const WelcomeCard = () => {
       >
         <div className="text-white flex flex-col items-center text-center gap-2">
           <span className="text-[15pt] text-gray-50 font-extrabold">
-            For every occasions
+            Unlocking IoT
           </span>
-          <span className="text-[11pt] font-bold px-3 text-gray-200">
-            Unlocking marketing, pr and fahsion
-          </span>
-          <span
-            onClick={() => alert("Coming soon!")}
-            className="cursor-pointer border-[1pt] text-[10pt] font-semibold bg-white text-gray-800 rounded-xl py-2 px-4 border-gray-50 shadow"
-          >
-            Contact us
-          </span>
+          <span className="text-[11pt] font-bold px-3 text-gray-200"></span>
         </div>
       </section>
     </section>

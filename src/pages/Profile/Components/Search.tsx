@@ -1,12 +1,12 @@
 import { BiSearch } from "react-icons/bi";
-import useLoginModal from "src/hooks/useLoginModal";
+import useContactUsModal from "src/hooks/useContactUsModal";
 
 const Search = () => {
-  const loginModal = useLoginModal();
+  const contactUsModal = useContactUsModal();
 
   return (
     <div
-      onClick={loginModal.onOpen}
+      onClick={contactUsModal.onOpen}
       className="
         border-[1px] 
         w-full 

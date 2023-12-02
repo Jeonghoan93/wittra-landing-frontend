@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import useLoginModal from "src/hooks/useLoginModal";
+import useContactUsModal from "src/hooks/useContactUsModal";
 import useRegisterModal from "src/hooks/useRegisterModal";
 import useRentModal from "src/hooks/useRentModal";
 import { User } from "src/interfaces/user";
@@ -20,7 +20,7 @@ interface MainMenuProps {
 const MainMenu: React.FC<MainMenuProps> = ({ currentUser }) => {
   const navigate = useNavigate();
 
-  const loginModal = useLoginModal();
+  const contactUsModal = useContactUsModal();
   const registerModal = useRegisterModal();
   const rentModal = useRentModal();
   const searchModal = useSearchModal();
@@ -121,7 +121,7 @@ const MainMenu: React.FC<MainMenuProps> = ({ currentUser }) => {
               </>
             ) : (
               <>
-                <MenuItem label="Login" onClick={loginModal.onOpen} />
+                <MenuItem label="Login" onClick={contactUsModal.onOpen} />
                 <MenuItem label="Sign up" onClick={registerModal.onOpen} />
               </>
             )}

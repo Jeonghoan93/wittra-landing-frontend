@@ -2,7 +2,7 @@ import { Outlet } from "react-router-dom";
 import MobileFooter from "src/components/footers/MobileFooter";
 import CreateProfileModal from "src/components/modals/CreateProfileModal";
 import FinishRegister from "src/components/modals/FinishRegisterModal";
-import LoginModal from "src/components/modals/LoginModal";
+import ContactUsModal from "src/components/modals/ContactUsModal";
 import RegisterModal from "src/components/modals/RegisterModal";
 import RentModal from "src/components/modals/RentModal";
 import SearchModal from "src/components/modals/SearchModal";
@@ -18,7 +18,7 @@ export default function HostLayout() {
   return (
     <>
       <ToasterProvider />
-      <LoginModal />
+      <ContactUsModal />
       <RegisterModal />
       <FinishRegister />
       <CreateProfileModal />

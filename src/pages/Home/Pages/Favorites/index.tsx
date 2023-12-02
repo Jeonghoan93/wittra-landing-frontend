@@ -6,7 +6,7 @@ import Button from "src/components/Button";
 import Container from "src/components/Container";
 import { useCurrentUser } from "src/hooks/useCurrentUser";
 import useGetEventsByUserId from "src/hooks/useGetEventsByUserId";
-import useLoginModal from "src/hooks/useLoginModal";
+import useContactUsModal from "src/hooks/useContactUsModal";
 import FavoritesClient from "./Components/FavoritesClient";
 
 const Favorites = () => {
@@ -14,7 +14,7 @@ const Favorites = () => {
   const events = useGetEventsByUserId(currentUser?.userId ?? null);
   const navigate = useNavigate();
 
-  const loginModal = useLoginModal();
+  const contactUsModal = useContactUsModal();
 
   if (!currentUser) {
     return (
@@ -49,7 +49,7 @@ const Favorites = () => {
             </div>
 
             <div style={{ maxWidth: "100px" }}>
-              <Button label="Log in" onClick={loginModal.onOpen} />
+              <Button label="Log in" onClick={contactUsModal.onOpen} />
             </div>
           </div>
         </div>

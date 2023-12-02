@@ -1,36 +1,40 @@
+import useContactUsModal from "src/hooks/useContactUsModal";
+
 const WittraCard = () => {
+  const contactUsModal = useContactUsModal();
+
   return (
     <div className="pt-6 p-3">
-      <div className="flex flex-col sm:flex-row items-center justify-between gap-10">
-        <div className="flex flex-col items-start gap-4">
+      <div className="flex flex-col sm:flex-row items-center sm:justify-between gap-10">
+        <div className="flex flex-col items-start gap-5">
           <span className="font-extrabold text-[21pt] ">
-            Alla dina medlemskort på ett ställe.
+            The only IoT solution you will ever need
           </span>
 
           <span className="font-normal text-[13pt] ">
-            Lägg till dina medlemskort i Klarna-appen så går du aldrig miste om
-            några poäng från dina favoritbutiker. Finns i den senaste versionen
-            av Klarna-appen.
+            Ultimately providing a solid, reliable way to find out "where is my
+            stuff, and what is it doing?"
           </span>
 
           <div className="flex flex-row gap-5 items-start">
-            <span className="p-4 border-[1px] rounded-lg bg-black text-white font-bold">
-              Kom igång
+            <span
+              onClick={contactUsModal.onOpen}
+              className="cursor-pointer p-4 border-[1px] rounded-lg bg-black text-white font-bold"
+            >
+              Contact us
             </span>
-            <span className="p-4 border-[1px] border-gray-900 rounded-lg font-bold">
-              Läs mer
+            <span className="cursor-pointer p-4 border-[1px] border-gray-900 rounded-lg font-bold">
+              Read more
             </span>
           </div>
         </div>
 
         <section className="w-full h-[70vh] overflow-hidden relative">
           <img
-            src={"/images/goto.avif"}
-            style={{ width: "100%", height: "100%" }}
-            className="object-cover w-full"
+            src={"/images/landing9.png"}
+            className="object-cover h-full w-full"
             alt="Image"
           />
-          right and top when it is smaller
         </section>
       </div>
     </div>

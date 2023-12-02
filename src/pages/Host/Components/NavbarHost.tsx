@@ -3,12 +3,12 @@ import { BiHomeAlt2 } from "react-icons/bi";
 
 import { useNavigate } from "react-router-dom";
 import { useCurrentUser } from "src/hooks/useCurrentUser";
-import useLoginModal from "src/hooks/useLoginModal";
+import useContactUsModal from "src/hooks/useContactUsModal";
 import useRentModal from "src/hooks/useRentModal";
 
 const NavbarHost: React.FC = () => {
   const currentUser = useCurrentUser();
-  const LoginModal = useLoginModal();
+  const ContactUsModal = useContactUsModal();
   const navigate = useNavigate();
 
   const rentModal = useRentModal();
@@ -24,7 +24,7 @@ const NavbarHost: React.FC = () => {
           <div className="flex flex-row items-center gap-3">
             <span
               onClick={
-                currentUser ? () => alert("Not yet!") : LoginModal.onOpen
+                currentUser ? () => alert("Not yet!") : ContactUsModal.onOpen
               }
               className="cursor-pointer shadow-sm rounded-full border-[1px] border-neutral-100 "
             >
@@ -54,7 +54,7 @@ const NavbarHost: React.FC = () => {
                 </span>
               ) : (
                 <span
-                  onClick={LoginModal.onOpen}
+                  onClick={ContactUsModal.onOpen}
                   className="cursor-pointer font-semibold underline text-[10pt]"
                 >
                   Login to see

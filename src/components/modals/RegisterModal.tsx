@@ -2,7 +2,7 @@ import { useCallback, useState } from "react";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 import { FcGoogle } from "react-icons/fc";
 
-import useLoginModal from "src/hooks/useLoginModal";
+import useContactUsModal from "src/hooks/useContactUsModal";
 import useRegisterModal from "src/hooks/useRegisterModal";
 
 import toast from "react-hot-toast";
@@ -16,7 +16,7 @@ import Modal from "./Modal";
 const RegisterModal = () => {
   const navigate = useNavigate();
   const registerModal = useRegisterModal();
-  const loginModal = useLoginModal();
+  const contactUsModal = useContactUsModal();
   const [isLoading, setIsLoading] = useState(false);
 
   const {
@@ -56,7 +56,7 @@ const RegisterModal = () => {
       if (res?.status === "success") {
         toast.success("Logged in");
         navigate("/");
-        loginModal.onClose();
+        contactUsModal.onClose();
       } else {
         toast.error(res?.message || "Unknown error");
       }
@@ -67,8 +67,8 @@ const RegisterModal = () => {
 
   const onToggle = useCallback(() => {
     registerModal.onClose();
-    loginModal.onOpen();
-  }, [registerModal, loginModal]);
+    contactUsModal.onOpen();
+  }, [registerModal, contactUsModal]);
 
   const bodyContent = (
     <div className="flex flex-col gap-4">
