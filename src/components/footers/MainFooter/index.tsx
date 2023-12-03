@@ -39,7 +39,7 @@ const MainFooter: React.FC = () => {
                 WiTTRA™ AB
               </span>
               <span className="text-gray-500 mb-0 text-[12pt] font-semibold ">
-                Unlocking marketing, pr and fashion strategies
+                Unlocking IoT
               </span>
             </div>
 

@@ -2,12 +2,9 @@ import { useLocation } from "react-router-dom";
 import { useCurrentUser } from "src/hooks/useCurrentUser";
 import { isMatchingPath } from "src/utils/isMatchingPath";
 import Container from "../Container";
-import Categories from "./Components/Categories";
 import Logo from "./Components/Logo";
-import Menus from "./Components/Menus";
-import Search from "./Components/Search";
 import UserMenu from "./Components/UserMenu";
-import MobileMenus from "./Components/MobileMenus";
+import MobileMenus from "../mobileMenus/MobileMenus";
 
 const Navbar: React.FC = () => {
   const location = useLocation();
@@ -30,7 +27,7 @@ const Navbar: React.FC = () => {
   }
 
   return (
-    <div className="fixed w-full bg-white z-10 pb-3 shadow-sm">
+    <div className="fixed w-full bg-black z-10 pb-3 shadow-sm">
       <div
         className="
           pt-4
@@ -56,17 +53,11 @@ const Navbar: React.FC = () => {
             </div>
 
             <div className="block sm:hidden">
-              <MobileMenus currentUser={currentUser} />
+              <MobileMenus />
             </div>
           </div>
         </Container>
       </div>
-      <Categories />
-      <Menus page={"/company"} menus={["Mission", "Arts", "Next Unicorn"]} />
-      <Menus
-        page={"/partner"}
-        menus={["Club Owner", "Festival Organizer", "Rave Organizer"]}
-      />
     </div>
   );
 };

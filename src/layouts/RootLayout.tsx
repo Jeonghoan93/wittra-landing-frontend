@@ -16,7 +16,7 @@ export default function RootLayout() {
 
       <Navbar />
 
-      <div className="pb-20 pt-[90px]">
+      <div className="pb-20 pt-[95px]">
         <Outlet />
       </div>
       {isMobile ? <MobileFooter /> : <FixedFooter />}

@@ -18,13 +18,9 @@ interface UserMenuProps {
 }
 
 const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
-  const navigate = useNavigate();
-
   const contactUsModal = useContactUsModal();
-  const registerModal = useRegisterModal();
-  const rentModal = useRentModal();
 
-  const createProfileModal = useCreateProfileModal();
+  const rentModal = useRentModal();
 
   const [isOpen, setIsOpen] = useState(false);
 
@@ -60,7 +56,8 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
           onClick={onRent}
           className="
         
-            text-sm 
+            text-sm
+            text-white 
          font-bold
             py-3 
             px-4 
@@ -77,7 +74,8 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
           onClick={onRent}
           className="
         
-            text-sm 
+            text-sm
+            text-white 
          font-bold
             py-3 
             px-4 
@@ -94,7 +92,8 @@ const UserMenu: React.FC<UserMenuProps> = ({ currentUser }) => {
           onClick={onRent}
           className="
         
-            text-sm 
+            text-sm
+            text-white 
          font-bold
             py-3 
             px-4 

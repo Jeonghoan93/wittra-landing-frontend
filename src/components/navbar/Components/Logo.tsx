@@ -6,7 +6,7 @@ const Logo = () => {
   return (
     <span
       onClick={() => navigate("/")}
-      className={"cursor-pointer font-extrabold text-[14pt]"}
+      className={"cursor-pointer font-extrabold text-white text-[14pt]"}
     >
       WiTTRA
     </span>
